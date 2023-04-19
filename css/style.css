@@ -1,0 +1,101 @@
+body {
+    text-align: center;
+}
+
+li {
+    width: 100px;
+    height: 15px;
+    background-color: white;
+    border: 1px solid black;
+    margin: 10px, 10px, 10px, 10px;
+    padding: 10px, 10px, 10px, 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li:hover {
+    background-color: #FFFA09;
+}
+
+.set {
+    background-color: #AAECFA;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+    height: 200px;
+    width: 200px;
+    float: left;
+}
+
+#MyTitle {
+    background-color: #FA922F;
+    border: 1px solid black;
+    height: 50px;
+    width: 960px;
+}
+
+#MyFoot {
+    background-color: #95FF7A;
+    border: 1px solid black;
+    height: 50px;
+    width: 960px;
+    float: left;
+}
+
+@media only screen and (min-width: 769px) {
+    .div-set {
+        float: left;
+    }
+
+    .set {
+        float: right;
+    }
+
+    #Adiv {
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #MyTitle {
+        width: 75%;
+    }
+
+    .div-set {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .set {
+        width: 30%;
+        float: none;
+    }
+
+    #MyFoot {
+        width: 75%;
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #MyTitle {
+        width: 60%;
+    }
+
+    .div-set {
+        display: unset;
+        flex-wrap: unset;
+    }
+
+    .set {
+        width: 50%;
+        float: none;
+    }
+
+    #MyFoot {
+        width: 60%;
+        float: none;
+    }
+}
